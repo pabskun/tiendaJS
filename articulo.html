@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <h2>Registro de artículos</h2>
+        <label for="txtCodigo">Código</label>
+        <input type="text" id="txtCodigo">
+
+        <label for="txtNombre">Nombre</label>
+        <input type="text" id="txtNombre">
+
+        <label for="txtPrecio">Precio</label>
+        <input type="number" id="txtPrecio">
+
+        <label for="sltProveedor">Proveedor</label>
+        <select id="sltProveedor">
+
+        </select>
+
+        <button type="button" id="btnRegistrar">Registrar</button>
+    </form>
+
+    <h2>Lista de artículos</h2>
+
+    <label for="txtFiltro">Filtrar:</label>
+    <input type="text" id="txtFiltro">
+
+    <table id="tblArticulos">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Proveedor</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="js/logicaArticulos.js"></script>
+    <script src="js/logicaProveedor.js"></script>
+    <script src="js/controladorArticulos.js"></script>
+</body>
+</html>
