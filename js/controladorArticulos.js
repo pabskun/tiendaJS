@@ -35,10 +35,28 @@ function mostrarListaArticulos(){
     for(let i = 0; i < listaArticulos.length;i++){
         let fila = cuerpoTabla.insertRow(i);
 
+        let campoConfiguracion =  fila.insertCell();
         let campoCodigo = fila.insertCell();
         let campoNombre = fila.insertCell();
         let campoPrecio = fila.insertCell();
         let campoProveedor = fila.insertCell();
+
+
+        //Crear botones de modificar y eliminar
+        let btnModificar = document.createElement('a');
+        btnModificar.classList.add('fa');
+        btnModificar.classList.add('fa-pencil');
+        btnModificar.classList.add('botonModificar');
+        btnModificar.name = listaArticulos[i][0];
+
+        let btnDeshabilitar = document.createElement('a');
+        btnDeshabilitar.classList.add('fa');
+        btnDeshabilitar.classList.add('fa-trash');
+        btnDeshabilitar.classList.add('botonDeshabilitar');
+        btnDeshabilitar.name = listaArticulos[i][0];
+
+        campoConfiguracion.appendChild(btnModificar);
+        campoConfiguracion.appendChild(btnDeshabilitar);
 
         campoCodigo.innerHTML = listaArticulos[i][0];
         campoNombre.innerHTML = listaArticulos[i][1];
