@@ -5,10 +5,11 @@
  background: #ecf0f1;
  
 }
-#tblArticulos thead tr{
-    height: 25px; 
+#tblArticulos thead tr, #tblArticulos tbody tr{
+    height: 45px;
+    
 }
-#tblArticulos thead tr th{
+#tblArticulos thead tr th, #tblArticulos tbody tr td{
     text-align: center;
     vertical-align: middle;
     padding: 0 10px;
