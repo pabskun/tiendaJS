@@ -118,6 +118,7 @@ function limpiarFormulario(){
     inputCodigo.value = '';
     inputNombre.value = '';
     inputPrecio.value = 0;
+    selectProveedor.selectedIndex = 0;
 }
 function mostrarProveedores(){
     let listaProveedores = obtenerListaProveedores();

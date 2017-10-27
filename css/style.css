@@ -1,15 +1,21 @@
 .botonModificar{
     display: inline-block;
     padding: 10px;
-    background: #f1c40f;
+    background: #f39c12 ;
     margin-right: 5px;
     border-radius: 5px;
+}
+.botonModificar:hover{
+    background: #f1c40f;
 }
 .botonDeshabilitar{
     display: inline-block;
     padding: 10px;
-    background: #e74c3c;
+    background: #c0392b;
     border-radius: 5px;
+}
+.botonDeshabilitar:hover{
+    background: #e74c3c;
 }
 .ocultar{
     display: none;
