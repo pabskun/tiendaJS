@@ -22,3 +22,26 @@ function obtenerListaArticulos(){
 
     return listaArticulos;
 }
+
+function buscarArticuloPorCodigo(psCodigo){
+    let listaArticulos = obtenerListaArticulos();
+    let articuloEncontrado = [];
+
+    for(let i = 0; i < listaArticulos.length; i++){
+        if(listaArticulos[i][0] === psCodigo){
+            articuloEncontrado = listaArticulos[i];
+        }
+    }
+    return articuloEncontrado;
+}
+
+function actualizarArticulo(psArticulo){
+    let listaArticulos = obtenerListaArticulos();
+
+    for(let i =0; i < listaArticulos.length; i++){
+        if(listaArticulos[i][0] === psArticulo[0]){
+            listaArticulos[i] = psArticulo;
+            localStorage.setItem('listaArticulosLS', JSON.stringify(listaArticulos));
+        }
+    }
+}
