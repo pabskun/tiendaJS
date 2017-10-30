@@ -1,3 +1,10 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.formTitleContainer{
+    background-image: url("https://www.freepik.com/index.php?goto=74&idfoto=1074458");
+}
 #tblArticulos{
     border-collapse: collapse;
 }
